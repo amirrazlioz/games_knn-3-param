@@ -134,8 +134,6 @@
             margin-top: 4px;
         }
 
-
-		
 		.instructions {
             font-size: 0.9em;
             color: #cbd5e1;
@@ -504,11 +502,13 @@
             return { x: px, y: py };
         }
 
-        function drawLabel(text, x, y, color) {
-            ctx.font = 'bold 14px Segoe UI, sans-serif';
+	
+		function drawLabel(text, x, y, color) {
+            ctx.font = 'bold 13px Segoe UI, sans-serif';
+            ctx.textAlign = 'left';
             const textWidth = ctx.measureText(text).width;
-            ctx.fillStyle = 'rgba(15, 23, 42, 0.8)';
-            ctx.fillRect(x - 4, y - 14, textWidth + 8, 18);
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
+            ctx.fillRect(x - 4, y - 13, textWidth + 8, 16);
             ctx.fillStyle = color;
             ctx.fillText(text, x, y);
         }
