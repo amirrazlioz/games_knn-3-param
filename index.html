@@ -204,8 +204,7 @@
         <div class="canvas-container">
             <canvas id="canvas3d" width="560" height="460"></canvas>
             
-            <div class="anim-controls">
-				
+            <div class="anim-controls">				
 				<button class="btn btn-secondary" onclick="toggleAnimation()" id="animBtn"> הפעל סיבוב אוטומטי ▶️ </button> 
             </div>
 
@@ -369,10 +368,7 @@
         });
 
         function toggleAnimation() {
-            isAnimating = !isAnimating;
-            //document.getElementById('animBtn').innerText = isAnimating ? '⏸️ השעה סיבוב אוטומטי' : '▶️ הפעל סיבוב אוטומטי';
-			//document.getElementById('animBtn').innerText = isAnimating ? '▶️ הפעל סיבוב אוטומטי: '▶️ השעה סיבוב אוטומטי';
-			
+            isAnimating = !isAnimating;		
 			document.getElementById('animBtn').innerText = isAnimating ? '▶️ הפעל סיבוב אוטומטי ' : '⏸️ השעה סיבוב אוטומטי' ;
         }
 
